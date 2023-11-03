@@ -576,7 +576,7 @@ a {
 .blog .blog-list {
     display: flex;
     gap: 30px;
-    margin-top: 55px;
+    padding: 55px 0px 38px;
     overflow: hidden;
 }
 
@@ -655,7 +655,6 @@ a {
     display: flex;
     justify-content: center;
     gap: 6px;
-    margin-top: 38px;
 }
 
 .blog .dot {
