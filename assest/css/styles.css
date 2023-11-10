@@ -32,7 +32,8 @@ a {
     line-height: 50px;
     text-align: center;
     color: #ffffff;
-    background-color: #171100;
+    /* background-color: #1F2229; */
+    background-color: var(--primary-color);
     border-radius: 999px;
 }
 
@@ -40,7 +41,7 @@ a {
     font-family: var(--font-heading);
     font-weight: 700;
     letter-spacing: -0.02em;
-    color: #171100;
+    color: #ffffff;
 }
 
 .heading.lv1 {
@@ -83,7 +84,7 @@ a {
 
 /* ===== Header ===== */
 .header {
-    background-color: #fffcf4;
+    background-color: #000000;
 }
 
 .header.fixed {
@@ -98,6 +99,10 @@ a {
     padding: 36px 0px 8px;
 }
 
+.logo {
+    width: 85px;
+}
+
 .nav {
     margin-left: auto;
 }
@@ -110,7 +115,7 @@ a {
     position: relative;
     padding: 8px 21px;
     font-size: 1.6rem;
-    color: #5f5b53;
+    color: #c0c0c0;
     /* background-color: orange; */
 }
 
@@ -118,7 +123,7 @@ a {
 .nav li.active a {
     /* font-weight: 600; */
     text-shadow: 1px 0 0 currentColor;
-    color: #171100;
+    color: #ffffff;
 }
 
 .nav li.active a::after {
@@ -129,7 +134,7 @@ a {
     display: inline-block;
     width: 12px;
     height: 2px;
-    background-color: #171100;
+    background-color: #ffffff;
     border-radius: 1px;
 }
 
@@ -144,7 +149,10 @@ a {
 /* ===== Hero ===== */
 .hero {
     padding: 56px 0px 65px;
-    background-color: #fffcf4;
+    /* background-color: #fffcf4; */
+    /* background-image: url(/assest/img/background.png); */
+    background: rgb(0,0,0);
+    background: linear-gradient(180deg, rgba(0,0,0,1) 46%, rgba(207,0,3,1) 100%);
 }
 
 .hero .body {
@@ -157,14 +165,36 @@ a {
     width: 48%;
 }
 
+.hero .media-block figure {
+    width: 470px;
+    border-radius: 20px;
+    background: rgb(0,0,0);
+    background: linear-gradient(180deg, rgba(0,0,0,1) 10%, rgba(255,0,0,1) 90%);
+}
+
 .hero .media-block .img {
     width: 470px;
     height: 685px;
     object-fit: cover;
+    /* background-clip: padding-box; */
+    border: 10px solid transparent;
+    /* border-image-slice: 1;
+    border-image-source: linear-gradient(to right bottom, #6a5af9, #f62682); */
+    object-position: 0px 0px;
     border-radius: 20px;
     /* vertical-align: bottom; */
     display: block;
 }
+
+/* .hero .media-block .img::before {
+    content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  margin: -20px;
+  background-image: linear-gradient(to right top, #2979ff, #07a787);
+  border-radius: inherit;
+} */
 
 .hero-summary {
     position: absolute;
@@ -172,7 +202,9 @@ a {
     bottom: 48px;
     width: 270px;
     padding: 24px 24px;
-    background-color: #ffffff;
+    background-color: #1F2229;
+    /* background: rgb(0,0,0);
+    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(122,0,2,1) 100%); */
     box-shadow: 0px 16px 32px rgba(0, 0, 0, 0.1);
     border-radius: 12px;
 }
@@ -211,13 +243,14 @@ a {
 .hero-summary .label {
     font-size: 1.4rem;
     line-height: 1.86;
+    color: #c0c0c0;
 }
 
 .hero-summary .title {
     font-weight: 600;
     font-size: 1.8rem;
     line-height: 1.67;
-    color: #171100;
+    color: #c0c0c0;
 }
 
 /* Hero right */
@@ -226,11 +259,15 @@ a {
     padding: 64px 0px 0px 130px;
 }
 
+.hero .content-block strong {
+    color: var(--primary-color);
+}
+
 .hero .desc {
     margin-top: 22px;
     font-size: 1.8rem;
     line-height: 1.67;
-    color: #5f5b53;
+    color: #c0c0c0;
 }
 
 .hero .cta-group {
@@ -261,6 +298,7 @@ a {
     width: 40px;
     height: 40px;
     border-radius: 50%;
+    background-color: #ffffff;
     box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
 }
 
@@ -269,11 +307,12 @@ a {
     font-weight: 600;
     font-size: 1.8rem;
     line-height: 1.67;
-    color: #171100;
+    color: #ffffff;
 }
 
 .hero .stats {
     margin-left: -28px;
+    color: #c0c0c0;
 }
 
 .hero .stats strong {
@@ -282,7 +321,7 @@ a {
     font-weight: 700;
     font-size: 4.4rem;
     line-height: 1.23;
-    color: #171100;
+    color: #ffffff;
 }
 
 /* ===== Popular ===== */
@@ -303,7 +342,7 @@ a {
     width: 458px;
     font-size: 1.8rem;
     line-height: 1.67;
-    color: #5f5b53;
+    color: #c0c0c0;
 }
 
 .popular-top .controls {
@@ -338,14 +377,16 @@ a {
 
 .popular .course-item {
     flex: 1;
-    background-color: #ffffff;
-    border: 1px solid #e2dfda;
+    /* background-color: #ffffff; */
+    background: rgb(0,0,0);
+    background: linear-gradient(180deg, rgba(0,0,0,1) 78%, rgba(122,0,2,1) 100%);
+    border: 1px solid #BF3030;
     border-radius: 12px;
 }
 
 .popular .course-item:hover {
     border-color: transparent;
-    box-shadow: 0px 18px 36px rgba(0, 0, 0, 0.09);
+    box-shadow: 0px 18px 36px rgba(245, 243, 243, 0.1);
 }
 
 .popular .course-item .thump {
@@ -355,7 +396,11 @@ a {
     margin: -1px;
     object-fit: cover;
     border-radius: 12px 12px 0px 0px;
-    object-position: 0px 0px;
+    /* object-position: 0px 0px; */
+}
+
+.popular .course-item .thump-1 {
+    object-position: right;
 }
 
 .popular .course-item .info {
@@ -375,7 +420,7 @@ a {
     font-weight: 600;
     font-size: 1.8rem;
     line-height: 1.67;
-    color: #171100;
+    color: #ffffff;
 }
 
 .popular .rating .value {
@@ -389,7 +434,7 @@ a {
     margin-top: 6px;
     font-size: 1.4rem;
     line-height: 1.86;
-    color: #5f5b53;
+    color: #c0c0c0;
 }
 
 .popular .course-item .foot {
@@ -400,7 +445,7 @@ a {
     font-weight: 600;
     font-size: 1.8rem;
     line-height: 1.67;
-    color: #171100;
+    color: #ffffff;
 }
 
 .popular .course-item .book-btn {
@@ -416,7 +461,8 @@ a {
 .feedback {
     margin-top: 135px;
     padding: 96px 0px;
-    background-color: #2e2100;
+    background-color: #1F2229;
+    
 }
 
 .feedback-list {
@@ -487,7 +533,7 @@ a {
 
 /* ===== Features ===== */
 
-/* features-2nd */
+/* features-1nd */
 .features {
     margin-top: 135px;
     padding: 65px 0px;
@@ -526,7 +572,7 @@ a {
     margin-top: 16px;
     font-size: 1.6rem;
     line-height: 1.75;
-    color: #5f5b53;
+    color: #c0c0c0;
 }
 
 .features .content .cta-btn {
@@ -539,6 +585,8 @@ a {
 /* features-2nd */
 .features-2nd {
     margin-top: 70px;
+    background: rgb(0,0,0);
+    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(117,26,28,1) 25%, rgba(232,7,11,1) 49%, rgba(120,13,13,1) 78%, rgba(0,0,0,1) 100%);
 }
 
 .features-2nd .body {
@@ -547,6 +595,31 @@ a {
 
 .features-2nd .content {
     width: 49%;
+}
+
+.features-2nd .skill-items {
+    width: 70px;
+    gap: 20px;
+}
+
+.features-2nd .skill-items img {
+    border: 3px solid #c0c0c0;
+    border-radius: 13px;
+    box-shadow: rgba(0, 0, 0, 0.5) 0px 19px 38px, rgba(0, 0, 0, 0.5) 0px 15px 12px;
+}
+
+.features-2nd .skill-items .skills {
+    display: flex;
+    gap: 30px;
+}
+
+.features-2nd .skill-items .skill-top {
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+.features-2nd .skill-items .skill-bottom {
+    margin-bottom: 30px;
 }
 
 .features-2nd .images img {
@@ -558,7 +631,9 @@ a {
 .blog {
     margin-top: 135px;
     padding: 96px 0px;
-    background-color: #fffcf4;
+    /* background-color: #000000; */
+    background: rgb(31,34,41);
+    background: linear-gradient(0deg, rgba(31,34,41,1) 0%, rgba(0,0,0,1) 100%);
 }
 
 .blog .blog-top {
@@ -570,7 +645,7 @@ a {
     width: 448px;
     font-size: 1.6rem;
     line-height: 1.75;
-    color: #696262;
+    color: #c0c0c0;
 }
 
 .blog .blog-list {
@@ -583,12 +658,14 @@ a {
 .blog .item {
     flex-shrink: 0;
     width: calc(100% / 3 - 20px);
-    background-color: #ffffff;
+    /* background-color: #ffffff; */
+    background: rgb(0,0,0);
+    background: linear-gradient(180deg, rgba(0,0,0,1) 60%, rgba(122,0,2,1) 100%);
     border-radius: 16px;
 }
 
 .blog .item:hover {
-    box-shadow: 0px 16px 32px rgba(0, 0, 0, 0.09);
+    box-shadow: 0px 16px 32px rgba(203, 203, 203, 0.1);
 }
 
 .blog .item .thumb {
@@ -609,7 +686,7 @@ a {
     align-items: center;
     font-size: 1.4rem;
     line-height: 1.86;
-    color: #5f5b53;
+    color: #c0c0c0;
 }
 
 .blog .item .date::before {
@@ -630,7 +707,7 @@ a {
     content: "";
     display: inline-block;
     height: 1px;
-    background-color: #e2dfda;
+    background-color: #c0c0c0;
     border-radius: 0.5px;
 }
 
@@ -640,7 +717,7 @@ a {
     font-weight: 600;
     font-size: 1.6rem;
     line-height: 1.75;
-    color: #171100;
+    color: #ffffff
 }
 
 .blog .item .btn {
@@ -673,7 +750,7 @@ a {
 /* ===== Footer ===== */
 .footer {
     padding: 96px 135px 0px;
-    background-color: #2e2100;
+    background-color: #1F2229;
 
 }
 
