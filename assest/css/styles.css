@@ -9,6 +9,11 @@
     --font-heading: Sen, sans-serif;
 }
 
+html,
+body {
+    scroll-behavior: smooth;
+}
+
 html {
     font-size: 62.5%;
 }
@@ -16,6 +21,7 @@ html {
 body {
     font-size: 1.6rem;
     font-family: "Poppins", sans-serif;
+    background-color: #000000;
 }
 
 /* ===== Common ===== */
@@ -32,7 +38,6 @@ a {
     line-height: 50px;
     text-align: center;
     color: #ffffff;
-    /* background-color: #1F2229; */
     background-color: var(--primary-color);
     border-radius: 999px;
 }
@@ -116,12 +121,10 @@ a {
     padding: 8px 21px;
     font-size: 1.6rem;
     color: #c0c0c0;
-    /* background-color: orange; */
 }
 
 .nav a:hover,
 .nav li.active a {
-    /* font-weight: 600; */
     text-shadow: 1px 0 0 currentColor;
     color: #ffffff;
 }
@@ -149,9 +152,6 @@ a {
 /* ===== Hero ===== */
 .hero {
     padding: 56px 0px 65px;
-    /* background-color: #fffcf4; */
-    /* background: rgb(0,0,0);
-    background: linear-gradient(180deg, rgba(0,0,0,1) 46%, rgba(207,0,3,1) 100%); */
     background: rgb(101, 11, 9);
     background: linear-gradient(
         0deg,
@@ -185,25 +185,11 @@ a {
     width: 470px;
     height: 685px;
     object-fit: cover;
-    /* background-clip: padding-box; */
     border: 10px solid transparent;
-    /* border-image-slice: 1;
-    border-image-source: linear-gradient(to right bottom, #6a5af9, #f62682); */
     object-position: 0px 0px;
     border-radius: 20px;
-    /* vertical-align: bottom; */
     display: block;
 }
-
-/* .hero .media-block .img::before {
-    content: "";
-  position: absolute;
-  inset: 0;
-  z-index: -1;
-  margin: -20px;
-  background-image: linear-gradient(to right top, #2979ff, #07a787);
-  border-radius: inherit;
-} */
 
 .hero-summary {
     position: absolute;
@@ -212,8 +198,6 @@ a {
     width: 270px;
     padding: 24px 24px;
     background-color: #1f2229;
-    /* background: rgb(0,0,0);
-    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(122,0,2,1) 100%); */
     box-shadow: 0px 16px 32px rgba(0, 0, 0, 0.1);
     border-radius: 12px;
 }
@@ -333,7 +317,7 @@ a {
     color: #ffffff;
 }
 
-/* ===== Popular ===== */
+/* ===== Service ===== */
 .popular {
     padding: 65px 0px;
     margin-top: 135px;
@@ -386,7 +370,6 @@ a {
 
 .popular .course-item {
     flex: 1;
-    /* background-color: #ffffff; */
     background: rgb(0, 0, 0);
     background: linear-gradient(
         180deg,
@@ -404,16 +387,18 @@ a {
 
 .popular .course-item .thump {
     width: calc(100% + 2px);
-    /* height: 278px; */
-    height: 500px;
+    height: 278px;
     margin: -1px;
     object-fit: cover;
     border-radius: 12px 12px 0px 0px;
-    /* object-position: 0px 0px; */
 }
 
 .popular .course-item .thump-1 {
-    object-position: right;
+    object-position: right top;
+}
+
+.popular .course-item .thump-2 {
+    object-position: top;
 }
 
 .popular .course-item .info {
@@ -544,7 +529,7 @@ a {
     color: #ffffff;
 }
 
-/* ===== Features ===== */
+/* ===== About Me ===== */
 
 /* features-1nd */
 .features {
@@ -648,11 +633,10 @@ a {
     height: 440px;
 }
 
-/* ===== Blog ===== */
+/* ===== Products ===== */
 .blog {
     margin-top: 135px;
     padding: 96px 0px;
-    /* background-color: #000000; */
     background: rgb(31, 34, 41);
     background: linear-gradient(
         0deg,
@@ -683,7 +667,6 @@ a {
 .blog .item {
     flex-shrink: 0;
     width: calc(100% / 3 - 20px);
-    /* background-color: #ffffff; */
     background: rgb(0, 0, 0);
     background: linear-gradient(
         180deg,
